@@ -1,16 +1,4 @@
-# **BaratoInventory -- Product Inventory API**
-
-A clean, modular, and containerized **Product Inventory Management
-backend** built with **ASP.NET Core (.NET 8)**, **EF Core**, **SQL
-Server**, and **Redis**.\
-Implements complete CRUD operations, search, caching, clean
-architecture, and full unit test coverage for repository and service
-layers.
-
-> **Backend is fully complete.**\
-> Blazor frontend will be added later.
-
-------------------------------------------------------------------------
+# **BaratoInventory**
 
 ## 🚀 **Tech Stack**
 
