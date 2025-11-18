@@ -1,0 +1,35 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: baratoinventory-sqlserver
+    environment:
+      SA_PASSWORD: "Barat0@Inv3ntory"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "49172:1433"
+    volumes:
+      - baratoinventory_sqlserver_data:/var/opt/mssql
+
+  redis:
+    image: "redis:7-alpine"
+    container_name: baratoinventory-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - baratoinventory_redis_data:/data
+
+  baratoinventory.api:
+    image: ${DOCKER_REGISTRY-}baratoinventoryapi
+    build:
+      context: .
+      dockerfile: BaratoInventory.API/Dockerfile
+    container_name: baratoinventory-api
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=BaratoInventoryDb;User Id=sa;Password=Barat0@Inv3ntory;TrustServerCertificate=True;
+      - ConnectionStrings__RedisConnection=redis:6379
+
+volumes:
+  baratoinventory_sqlserver_data:
+    driver: local
+  baratoinventory_redis_data:
+    driver: local

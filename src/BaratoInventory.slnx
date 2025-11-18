@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="../tests/BaratoInventory.Tests/BaratoInventory.Tests.csproj" Id="8d2eff9c-239f-46ad-a3c2-1d3ff5fa9eef" />
+  <Project Path="BaratoInventory.API/BaratoInventory.API.csproj" />
+  <Project Path="BaratoInventory.Core/BaratoInventory.Core.csproj" Id="8e7ecb6b-a0b0-40cb-a12e-c6d5172966d0" />
+  <Project Path="BaratoInventory.Infrastructure/BaratoInventory.Infrastructure.csproj" Id="2aefbcd7-0e9c-4ed2-839c-57b74041d236" />
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
+</Solution>
