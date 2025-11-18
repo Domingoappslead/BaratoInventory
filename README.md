@@ -1,4 +1,4 @@
-# **BaratoInventory**
+# **Barato Inventory**
 
 ## 🚀 **Tech Stack**
 
