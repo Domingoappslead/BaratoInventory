@@ -68,3 +68,36 @@ layers.
 | **POST** | `/api/products` | Create product |
 | **PUT** | `/api/products/{id}` | Update product |
 | **DELETE** | `/api/products/{id}` | Delete product |
+
+## 🚀 Running the Project Locally (Docker)
+
+This project is configured to run easily using **Docker Compose**. Follow these steps to set up and run the application using Visual Studio:
+
+### **Prerequisites**
+
+* **Docker Desktop** (running)
+* **Visual Studio** (2019 or newer, with **.NET and Docker workloads** installed)
+
+### **Setup Instructions**
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [Your Repository URL]
+    cd [Your Project Folder]
+    ```
+
+2.  **Open the Solution:**
+    * Double-click the solution file (`.sln`) to open the project in Visual Studio.
+
+3.  **Set Docker Compose as Startup Project:**
+    * In the **Solution Explorer**, right-click the `docker-compose` project (usually named `docker-compose` or `docker-compose.dcproj`).
+    * Select **Set as Startup Project**.
+
+4.  **Build and Run:**
+    * Click the **Docker Compose Play Button** (green triangle) in the Visual Studio toolbar.
+    * *Alternatively,* you can use the menu: **Debug** > **Start Debugging** (or press **F5**).
+
+    > **Note:** The first time you run this, Visual Studio will **build the Docker images** and start the containers, which may take a few minutes.
+
+5.  **Access the Application:**
+    * The application will automatically launch in your browser
