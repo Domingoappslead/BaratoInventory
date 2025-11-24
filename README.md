@@ -68,7 +68,7 @@ This project is configured to run easily using **Docker Compose**. Follow these 
 
 ### **Setup Instructions**
 
-1.  **Clone the Repository:**
+1.  **Clone the Repository**
 
 2.  **Open the Solution:**
     * Double-click the solution file (`.sln`) to open the project in Visual Studio.
